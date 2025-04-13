@@ -21,11 +21,12 @@ public class Encoder<T> extends MessageToByteEncoder<List<T>> {
     @Override
     protected void encode(ChannelHandlerContext ctx, List<T> msg, ByteBuf out) throws Exception {
         ByteBuf payload = ctx.alloc().buffer();
-        ByteBufSerializer.serialize(msg, payload);
-
-//        System.out.println("payload length send: " + payload.readableBytes());
-
-        out.writeInt(payload.readableBytes());
-        out.writeBytes(payload);
+        try {
+            ByteBufSerializer.serialize(msg, payload);
+            out.writeInt(payload.readableBytes());
+            out.writeBytes(payload);
+        } finally {
+            payload.release();
+        }
     }
 }

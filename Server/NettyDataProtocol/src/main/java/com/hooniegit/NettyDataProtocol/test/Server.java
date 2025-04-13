@@ -2,13 +2,16 @@ package com.hooniegit.NettyDataProtocol.test;
 
 import com.hooniegit.NettyDataProtocol.Tools.Decoder;
 import com.hooniegit.NettyDataProtocol.Tools.Encoder;
+
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -48,5 +51,6 @@ public class Server {
         workerGroup.shutdownGracefully();
         System.out.println("Netty TCP Server Stopped.");
     }
+
 }
 

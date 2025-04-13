@@ -10,9 +10,6 @@ public class ServerHandler<T> extends SimpleChannelInboundHandler<List<T>> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, List<T> msg) {
-        System.out.println( "[" + LocalDateTime.now() + "] Received Size: " + msg.size());
-//        for (T sample : msg) {
-//            System.out.println("  ↪ " + sample);
-//        }
+
     }
 }
