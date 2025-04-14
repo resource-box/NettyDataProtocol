@@ -16,7 +16,7 @@ import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.ByteBufOutputStream;
 
 /**
- *
+ * ByteBufSerializer Class for Netty Data Protocol (Based On Kryo)
  */
 public class ByteBufSerializer {
     private static final ObjectPool<Kryo> kryoPool;
@@ -41,7 +41,7 @@ public class ByteBufSerializer {
     }
 
     /**
-     *
+     * Serialization :: Serialize The Object to ByteBuf
      * @param object
      * @param out
      * @param <T>
@@ -60,7 +60,7 @@ public class ByteBufSerializer {
     }
 
     /**
-     *
+     * De-Serialization :: De-Serialize The ByteBuf to Object
      * @param in
      * @return
      * @param <T>
@@ -77,5 +77,6 @@ public class ByteBufSerializer {
             if (kryo != null) kryoPool.returnObject(kryo);
         }
     }
+
 }
 
