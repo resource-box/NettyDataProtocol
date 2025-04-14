@@ -1,7 +1,4 @@
-package com.hooniegit.NettyDataProtocol.test;
-
-import com.hooniegit.NettyDataProtocol.Tools.Decoder;
-import com.hooniegit.NettyDataProtocol.Tools.Encoder;
+package com.hooniegit.NettyDataProtocol.Tools;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -9,19 +6,25 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
-import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
+import java.util.function.Supplier;
 
-import org.springframework.stereotype.Service;
+public class Server<T extends Object> {
 
-@Service
-public class Server {
-
-    private final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
-    private final EventLoopGroup workerGroup = new NioEventLoopGroup();
+    private final EventLoopGroup bossGroup;
+    private final EventLoopGroup workerGroup;
     private Channel serverChannel;
 
-    @PostConstruct
+    private final int port;
+    private final Supplier<DefaultHandler<T>> handlerSupplier;
+
+    public Server(int port, int bossGroupThreads, int workerGroupThreads, Supplier<DefaultHandler<T>> handlerSupplier) {
+        this.bossGroup = new NioEventLoopGroup(bossGroupThreads);
+        this.workerGroup = new NioEventLoopGroup(workerGroupThreads);
+
+        this.port = port;
+        this.handlerSupplier = handlerSupplier;
+    }
+
     public void start() throws Exception {
         ServerBootstrap bootstrap = new ServerBootstrap();
         bootstrap.group(bossGroup, workerGroup)
@@ -31,26 +34,22 @@ public class Server {
                     protected void initChannel(SocketChannel ch) {
                         ch.pipeline().addLast(
                                 new Decoder(),
-                                new Encoder<Sample>(),
-                                new ServerHandler<Sample>()
+                                new Encoder<T>(),
+                                handlerSupplier.get()
                         );
                     }
                 });
 
-        ChannelFuture future = bootstrap.bind(9999).sync();
+        ChannelFuture future = bootstrap.bind(port).sync();
         this.serverChannel = future.channel();
-        System.out.println("Netty TCP Server Started on Port 9999");
     }
 
-    @PreDestroy
     public void stop() throws Exception {
         if (serverChannel != null) {
             serverChannel.close().sync();
         }
         bossGroup.shutdownGracefully();
         workerGroup.shutdownGracefully();
-        System.out.println("Netty TCP Server Stopped.");
     }
 
 }
-
