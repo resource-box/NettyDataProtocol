@@ -19,6 +19,7 @@ import io.netty.buffer.ByteBufOutputStream;
  * ByteBufSerializer Class for Netty Data Protocol (Based On Kryo)
  */
 public class ByteBufSerializer {
+
     private static final ObjectPool<Kryo> kryoPool;
 
     static {
@@ -29,6 +30,7 @@ public class ByteBufSerializer {
             @Override
             public Kryo create() {
                 Kryo kryo = new Kryo();
+                // ** Set ClassLoader to avoid ClassNotFoundException **
                 kryo.setClassLoader(Thread.currentThread().getContextClassLoader());
                 return kryo;
             }
