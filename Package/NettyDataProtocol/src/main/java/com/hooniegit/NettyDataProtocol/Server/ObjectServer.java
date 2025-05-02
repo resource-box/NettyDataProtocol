@@ -1,4 +1,8 @@
-package com.hooniegit.NettyDataProtocol.Tools;
+package com.hooniegit.NettyDataProtocol.Server;
+
+import com.hooniegit.NettyDataProtocol.Tools.Decoder;
+import com.hooniegit.NettyDataProtocol.Tools.DefaultHandler;
+import com.hooniegit.NettyDataProtocol.Tools.Encoder;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -13,7 +17,7 @@ import java.util.function.Supplier;
  * @param <T>
  * @author hooniegit
  */
-public class Server<T extends Object> {
+public class ObjectServer<T extends Object> {
 
     private final EventLoopGroup bossGroup;
     private final EventLoopGroup workerGroup;
@@ -29,7 +33,7 @@ public class Server<T extends Object> {
      * @param workerGroupThreads
      * @param handlerSupplier
      */
-    public Server(int port, int bossGroupThreads, int workerGroupThreads, Supplier<DefaultHandler<T>> handlerSupplier) {
+    public ObjectServer(int port, int bossGroupThreads, int workerGroupThreads, Supplier<DefaultHandler<T>> handlerSupplier) {
         this.bossGroup = new NioEventLoopGroup(bossGroupThreads);
         this.workerGroup = new NioEventLoopGroup(workerGroupThreads);
 
