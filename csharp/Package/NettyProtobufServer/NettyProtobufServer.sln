@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NettyProtobufServer", "NettyProtobufServer.csproj", "{E564D75E-DBBE-4A39-A759-A4A029FF0785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E564D75E-DBBE-4A39-A759-A4A029FF0785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E564D75E-DBBE-4A39-A759-A4A029FF0785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E564D75E-DBBE-4A39-A759-A4A029FF0785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E564D75E-DBBE-4A39-A759-A4A029FF0785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CD0FA4F-09BA-4A66-8DC1-97AEAD8A72B1}
+	EndGlobalSection
+EndGlobal

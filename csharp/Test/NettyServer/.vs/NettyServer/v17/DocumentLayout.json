@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\customhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:customhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\nettyserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:nettyserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomHandler.cs",
+              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\CustomHandler.cs",
+              "RelativeDocumentMoniker": "CustomHandler.cs",
+              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\CustomHandler.cs",
+              "RelativeToolTip": "CustomHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:38:04.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:36:18.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NettyServer",
+              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
+              "RelativeDocumentMoniker": "NettyServer.csproj",
+              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
+              "RelativeToolTip": "NettyServer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-03T13:34:02.907Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

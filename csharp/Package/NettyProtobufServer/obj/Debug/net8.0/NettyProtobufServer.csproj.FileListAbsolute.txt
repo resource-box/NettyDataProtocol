@@ -1,0 +1,12 @@
+C:\Users\dhkim\source\repos\NettyProtobufServer\bin\Debug\net8.0\NettyProtobufServer.deps.json
+C:\Users\dhkim\source\repos\NettyProtobufServer\bin\Debug\net8.0\NettyProtobufServer.dll
+C:\Users\dhkim\source\repos\NettyProtobufServer\bin\Debug\net8.0\NettyProtobufServer.pdb
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.csproj.AssemblyReference.cache
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.AssemblyInfoInputs.cache
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.AssemblyInfo.cs
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.csproj.CoreCompileInputs.cache
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.dll
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\refint\NettyProtobufServer.dll
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\NettyProtobufServer.pdb
+C:\Users\dhkim\source\repos\NettyProtobufServer\obj\Debug\net8.0\ref\NettyProtobufServer.dll

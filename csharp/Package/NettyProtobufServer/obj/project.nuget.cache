@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BkjebZQQcGo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dhkim\\source\\repos\\NettyProtobufServer\\NettyProtobufServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dhkim\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512"
+  ],
+  "logs": []
+}
