@@ -16,7 +16,17 @@ namespace NettyServer
         public void OnMessageReceived(TagGroup message)
         {
             // 수신한 데이터로 수행할 작업을 정의합니다.
-            Console.WriteLine($"SIZE: {message.Tags.Count}, Timestamp: {message.Timestamp}");
+            var tags = message.Tags;
+            Console.WriteLine($"SIZE: {tags.Count}, Timestamp: {message.Timestamp}");
+            foreach (TagData tag in tags)
+            {
+                // double_value 필드가 유효한 경우만 출력
+                if (tag.ValueCase == TagData.ValueOneofCase.DoubleValue)
+                {
+                    Console.WriteLine($"Tag ID: {tag.Id}, Value: {tag.DoubleValue}");
+                }
+            }
+
         }
 
     }

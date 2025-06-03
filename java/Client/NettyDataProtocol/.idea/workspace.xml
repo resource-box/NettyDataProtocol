@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21357dca-fb89-4f1b-8da8-d7ae11dfd184" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/FileContentIndex/1486772d-5386-45af-ac27-007ccd9b10d5.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/FileContentIndex/40891bdc-3a49-476f-ada2-f01e0f4b67d2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/FileContentIndex/d601b602-2c0b-4a40-a985-6a5e1bdcffac.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/NettyProtobufServer/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/.vs/ProjectEvaluation/nettyprotobufserver.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/Debug/net8.0/NettyProtobufServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/NettyProtobufServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/NettyProtobufServer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Package/NettyProtobufServer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/FileContentIndex/203b1985-39a9-43bf-ab30-dfdc07990ecf.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/FileContentIndex/2f7ff255-476b-4fde-a01a-60c175a83581.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/FileContentIndex/7590556d-80c4-4ab7-8aa8-3b3267dff7b0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/FileContentIndex/a8f0f720-37eb-4ffd-b3b7-9646d3ce8581.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/NettyServer/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/.vs/ProjectEvaluation/nettyserver.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/NettyServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/NettyServer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/bin/Debug/net8.0/NettyServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/NettyServer.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/ref/NettyServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/ref/NettyServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/refint/NettyServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/Debug/net8.0/refint/NettyServer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/NettyServer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/NettyServer.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../csharp/Test/NettyServer/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test/Client/NettyDataProtocol/src/main/java/com/hooniegit/NettyDataProtocol/test/NettyObjectClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test/Client/NettyDataProtocol/src/main/java/com/hooniegit/NettyDataProtocol/test/NettyObjectClientService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2vh5TE4hbrxZBU5b4cedoVIMKRZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.NettyDataProtocolApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/hooniegit/Git/NettyDataProtocol/java/Test/Client/NettyDataProtocol",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hooniegit.NettyDataProtocol.Protobuf" />
+      <recent name="com.hooniegit.NettyDataProtocol.test" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="NettyDataProtocolApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="NettyDataProtocol" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hooniegit.NettyDataProtocol.NettyDataProtocolApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="21357dca-fb89-4f1b-8da8-d7ae11dfd184" name="변경" comment="" />
+      <created>1744584470339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744584470339</updated>
+      <workItem from="1744584471691" duration="21000" />
+      <workItem from="1744584570498" duration="664000" />
+      <workItem from="1744585251588" duration="3535000" />
+      <workItem from="1744612082318" duration="873000" />
+      <workItem from="1746151722164" duration="11181000" />
+      <workItem from="1746281339215" duration="1717000" />
+      <workItem from="1747612259294" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

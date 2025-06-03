@@ -1,0 +1,15 @@
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\NettyProtobufServerFramework.dll.config
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\NettyProtobufServerFramework.dll
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\NettyProtobufServerFramework.pdb
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\Google.Protobuf.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\System.Buffers.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\System.Memory.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\System.Numerics.Vectors.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.csproj.AssemblyReference.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.csproj.CoreCompileInputs.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyPro.C6D33D4C.Up2Date
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.dll
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.pdb
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.csproj.Fody.CopyLocal.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServerFramework\obj\Debug\NettyProtobufServerFramework.csproj.Fody.RuntimeCopyLocal.cache

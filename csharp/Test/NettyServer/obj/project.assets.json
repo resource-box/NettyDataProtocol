@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
+      "projectUniqueName": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\NettyServer.csproj",
       "projectName": "NettyServer",
-      "projectPath": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
+      "projectPath": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\NettyServer.csproj",
       "packagesPath": "C:\\Users\\dhkim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\obj\\",
+      "outputPath": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

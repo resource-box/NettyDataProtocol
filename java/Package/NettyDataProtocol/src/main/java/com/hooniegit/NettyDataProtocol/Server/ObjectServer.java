@@ -13,9 +13,8 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import java.util.function.Supplier;
 
 /**
- * Server Class for Netty Data Protocol
+ * Netty Server Class :: Receive Java Object Data
  * @param <T>
- * @author hooniegit
  */
 public class ObjectServer<T extends Object> {
 
@@ -26,13 +25,6 @@ public class ObjectServer<T extends Object> {
     private final int port;
     private final Supplier<DefaultHandler<T>> handlerSupplier;
 
-    /**
-     * Constructor for Server
-     * @param port
-     * @param bossGroupThreads
-     * @param workerGroupThreads
-     * @param handlerSupplier
-     */
     public ObjectServer(int port, int bossGroupThreads, int workerGroupThreads, Supplier<DefaultHandler<T>> handlerSupplier) {
         this.bossGroup = new NioEventLoopGroup(bossGroupThreads);
         this.workerGroup = new NioEventLoopGroup(workerGroupThreads);
@@ -42,7 +34,7 @@ public class ObjectServer<T extends Object> {
     }
 
     /**
-     * PostConstruct Method to Start The Server
+     * PostConstruct Method :: Start Server
      * @throws Exception
      */
     public void start() throws Exception {
@@ -65,7 +57,7 @@ public class ObjectServer<T extends Object> {
     }
 
     /**
-     * PreDestroy Method to Stop The Server (Graceful Shutdown)
+     * PreDestroy Method :: Stop Server
      * @throws Exception
      */
     public void stop() throws Exception {

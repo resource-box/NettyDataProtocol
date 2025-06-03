@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NettyServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29c20c016036c71d007751cf16436311579ae579")]
 [assembly: System.Reflection.AssemblyProductAttribute("NettyServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NettyServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

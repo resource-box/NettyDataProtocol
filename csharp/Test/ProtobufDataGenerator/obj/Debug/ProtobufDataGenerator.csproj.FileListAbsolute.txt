@@ -1,0 +1,15 @@
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\ProtobufDataGenerator.exe.config
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\ProtobufDataGenerator.exe
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\ProtobufDataGenerator.pdb
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\Google.Protobuf.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\System.Buffers.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\System.Memory.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\System.Numerics.Vectors.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.csproj.AssemblyReference.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.csproj.CoreCompileInputs.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\Protobuf.FE52F77A.Up2Date
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.exe
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.pdb
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.csproj.Fody.CopyLocal.cache
+C:\hooniegit\Git\NettyDataProtocol\csharp\Test\ProtobufDataGenerator\obj\Debug\ProtobufDataGenerator.csproj.Fody.RuntimeCopyLocal.cache

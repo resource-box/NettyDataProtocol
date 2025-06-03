@@ -10,9 +10,16 @@
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.30.2" />
 	 <!-- .dll 패키지의 참조를 구성합니다. -->
+
 	<Reference Include="NettyProtobufServer">
       <HintPath>.\NettyProtobufServer.dll</HintPath>
 	</Reference>
+
+	  <!--
+	<Reference Include="NettyProtobufServer">
+	  <HintPath>.\NettyProtobufServerFramework.dll</HintPath>
+    </Reference>
+		-->
   </ItemGroup>
 
 </Project>

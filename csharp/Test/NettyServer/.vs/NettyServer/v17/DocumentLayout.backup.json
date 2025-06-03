@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\",
+  "WorkspaceRootPath": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\customhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\hooniegit\\git\\nettydataprotocol\\csharp\\test\\nettyserver\\customhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:customhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\hooniegit\\git\\nettydataprotocol\\csharp\\test\\nettyserver\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\hooniegit\\git\\nettydataprotocol\\csharp\\test\\nettyserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\nettyserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\hooniegit\\git\\nettydataprotocol\\csharp\\test\\nettyserver\\nettyserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:nettyserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\nettyprotobufserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:nettyprotobufserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|c:\\users\\dhkim\\source\\repos\\nettyserver\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8D248EB-2DF1-4269-962F-A5328CDF1C2B}|NettyServer.csproj|solutionrelative:message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\Message.cs",
+              "RelativeDocumentMoniker": "Message.cs",
+              "ToolTip": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\Message.cs",
+              "RelativeToolTip": "Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T05:30:36.117Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CustomHandler.cs",
-              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\CustomHandler.cs",
+              "DocumentMoniker": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\CustomHandler.cs",
               "RelativeDocumentMoniker": "CustomHandler.cs",
-              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\CustomHandler.cs",
+              "ToolTip": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\CustomHandler.cs",
               "RelativeToolTip": "CustomHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T13:38:04.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:36:18.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NettyServer",
-              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
-              "RelativeDocumentMoniker": "NettyServer.csproj",
-              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyServer.csproj",
-              "RelativeToolTip": "NettyServer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-03T13:34:02.907Z",
-              "EditorCaption": ""
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:36:18.129Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NettyProtobufServer.cs",
-              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyProtobufServer.cs",
-              "RelativeDocumentMoniker": "NettyProtobufServer.cs",
-              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\NettyProtobufServer.cs",
-              "RelativeToolTip": "NettyProtobufServer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:31:06.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Message.cs",
-              "DocumentMoniker": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Message.cs",
-              "RelativeDocumentMoniker": "Message.cs",
-              "ToolTip": "C:\\Users\\dhkim\\source\\repos\\NettyServer\\Message.cs",
-              "RelativeToolTip": "Message.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:31:02.782Z",
-              "EditorCaption": ""
+              "Title": "NettyServer.csproj",
+              "DocumentMoniker": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\NettyServer.csproj",
+              "RelativeDocumentMoniker": "NettyServer.csproj",
+              "ToolTip": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Test\\NettyServer\\NettyServer.csproj",
+              "RelativeToolTip": "NettyServer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-03T13:34:02.907Z"
             }
           ]
         }
