@@ -14,18 +14,21 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Netty Client Class :: Send Java Object Data
+ * Netty 기반의 클라이언트 클래스입니다. 복수의 클라이언트를 관리 및 반환합니다.
  * @param <T>
  */
 public class NettyObjectClient<T> {
 
+    // 생성자 속성
     private final String HOST;
     private final int PORT;
     private final int CHANNEL_COUNT;
 
-    private final List<Channel> channels = new ArrayList<>();
+    // 클래스 내부 속성
+    private final List<Channel> CHANNELS = new ArrayList<>();
     private final NioEventLoopGroup group = new NioEventLoopGroup();
 
+    // 상태 속성
     private final AtomicInteger INDEX = new AtomicInteger(0);
     private boolean IS_INITIALIZED = false;
 
@@ -36,7 +39,7 @@ public class NettyObjectClient<T> {
     }
 
     /**
-     * Initialize Channels
+     * 채널을 초기화하고 서버로 연결을 시도합니다.
      * @throws Exception
      */
     public void initialize() throws Exception {
@@ -59,7 +62,7 @@ public class NettyObjectClient<T> {
 
             for (int i = 0; i < CHANNEL_COUNT; i++) {
                 Channel channel = bootstrap.connect(HOST, PORT).sync().channel();
-                channels.add(channel);
+                this.CHANNELS.add(channel);
             }
 
             IS_INITIALIZED = true;
@@ -70,7 +73,7 @@ public class NettyObjectClient<T> {
     }
 
     /**
-     * Send Java Object Data
+     * 객체를 서버로 전송합니다.
      * @param data
      * @throws Exception
      */
@@ -78,7 +81,7 @@ public class NettyObjectClient<T> {
         if (!IS_INITIALIZED) initialize();
 
         int index = this.INDEX.getAndUpdate(i -> (i + 1) % CHANNEL_COUNT);
-        Channel channel = this.channels.get(index);
+        Channel channel = this.CHANNELS.get(index);
 
         try {
             channel.writeAndFlush(data);
@@ -89,10 +92,10 @@ public class NettyObjectClient<T> {
     }
 
     /**
-     * Shutdown Netty Client
+     * 클라이언트를 종료합니다.
      */
     public void shutdown() {
-        for (Channel channel : channels) {
+        for (Channel channel : this.CHANNELS) {
             if (channel.isOpen()) {
                 channel.close();
             }

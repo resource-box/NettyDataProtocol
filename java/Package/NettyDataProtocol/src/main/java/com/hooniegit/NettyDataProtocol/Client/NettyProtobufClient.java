@@ -16,18 +16,21 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Netty Client Class :: Send Google Protobuf Data
+ * Netty 및 Google Protobuf 기반의 클라이언트 클래스입니다. Protobuf 기반의 서버로 데이터를 전송합니다.
  * @param <T>
  */
 public class NettyProtobufClient<T extends GeneratedMessageV3> {
 
+    // 생성자 속성
     private final String HOST;
     private final int PORT;
     private final int CHANNEL_COUNT;
 
+    // 클래스 내부 속성
     private final List<Channel> channels = new ArrayList<>();
     private final NioEventLoopGroup group = new NioEventLoopGroup();
 
+    // 상태 속성
     private final AtomicInteger INDEX = new AtomicInteger(0);
     private boolean IS_INITIALIZED = false;
 
@@ -38,7 +41,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
     }
 
     /**
-     * Initialize Channels
+     * 채널을 초기화하고 서버로 연결을 시도합니다.
      * @throws Exception
      */
     public void initialize() throws Exception {
@@ -74,7 +77,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
     }
 
     /**
-     * Send Google Protobuf Data
+     * 객체를 서버로 전송합니다.
      * @param data
      * @throws Exception
      */
@@ -98,7 +101,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
     }
 
     /**
-     * Shutdown Netty Client
+     * 클라이언트를 종료합니다.
      */
     public void shutdown() {
         for (Channel channel : channels) {
