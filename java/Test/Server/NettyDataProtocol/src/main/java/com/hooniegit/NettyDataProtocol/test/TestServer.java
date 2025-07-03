@@ -20,7 +20,7 @@ public class TestServer {
                 port,
                 bossThreads,
                 workerThreads,
-                TestHandler<Sample>::new
+                TestHandler::new
         );
 
         nettyServer.start();
