@@ -5,7 +5,6 @@ import com.hooniegit.NettyDataProtocol.Exception.NettyDisconnectedException;
 import com.hooniegit.NettyDataProtocol.Exception.NettyUnInitializedException;
 import com.hooniegit.NettyDataProtocol.Tools.Decoder;
 import com.hooniegit.NettyDataProtocol.Tools.Encoder;
-
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -13,11 +12,10 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-
 import java.util.List;
 
 /**
- * Netty 기반의 클라이언트 클래스입니다. 서버와의 연결을 관리하고 데이터를 전송합니다.
+ * 통신 클라이언트 클래스입니다. 서버와의 연결을 관리하고 데이터를 전송합니다.
  * @param <T>
  */
 public class NettyClient<T> {
@@ -42,7 +40,7 @@ public class NettyClient<T> {
 
     /**
      * 채널을 초기화하고 서버로 연결을 시도합니다.
-     * @throws NettyConnectionFailedException
+     * @throws NettyConnectionFailedException 연결 실패 오류
      */
     public void initialize() {
         try {
@@ -64,25 +62,24 @@ public class NettyClient<T> {
             this.IS_INITIALIZED = true;
         } catch (Exception e) {
             this.IS_INITIALIZED = false;
-            throw new NettyConnectionFailedException(e.toString());
+            throw new NettyConnectionFailedException(e.toString(), INDEX);
         }
     }
 
     /**
      * 리스트 객체를 서버로 전송합니다.
-     * @param data
-     * @throws NettyUnInitializedException
-     * @throws NettyDisconnectedException
+     * @param data 전송 데이터
+     * @throws NettyUnInitializedException 초기화 비활성 오류
+     * @throws NettyDisconnectedException 연결 해제 오류
      */
     public void send(List<T> data) {
-        if (!this.IS_INITIALIZED) {
-            throw new NettyUnInitializedException("Netty Client is Not Initialized");
-        }
+        if (!this.IS_INITIALIZED) throw new NettyUnInitializedException("Netty Client is Not Initialized", INDEX);
+
         try {
             this.CHANNEL.writeAndFlush(data);
         } catch (Exception e) {
             this.IS_INITIALIZED = false;
-            throw new NettyDisconnectedException(e.toString());
+            throw new NettyDisconnectedException(e.toString(), this.INDEX);
         }
     }
 

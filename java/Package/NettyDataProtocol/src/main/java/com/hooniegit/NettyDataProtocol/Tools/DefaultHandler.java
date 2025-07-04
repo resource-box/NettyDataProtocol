@@ -5,14 +5,13 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import java.util.List;
 
 /**
- * Default Handler Class :: Handle Incoming Messages
+ * 기본 핸들러 클래스입니다. 해당 클래스를 상속받아 커스텀 핸들러를 정의해야 합니다.
  * @param <T>
- * @author hooniegit
  */
 public class DefaultHandler<T> extends SimpleChannelInboundHandler<List<T>> {
 
     /**
-     * Override Method :: Handle Incoming Messages
+     * 오버라이드용 메서드입니다. 수신 데이터를 처리하기 위해 해당 메서드를 구현해야 합니다.
      * @param ctx
      * @param msg
      */
