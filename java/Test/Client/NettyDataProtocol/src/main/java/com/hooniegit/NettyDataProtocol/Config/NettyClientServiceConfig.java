@@ -2,7 +2,6 @@ package com.hooniegit.NettyDataProtocol.Config;
 
 import com.hooniegit.NettyDataProtocol.Client.NettyClient;
 import com.hooniegit.NettyDataProtocol.Client.NettyClientManager;
-import com.hooniegit.NettyDataProtocol.test.Sample;
 import jakarta.annotation.PostConstruct;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,38 +15,44 @@ import java.util.List;
 @EnableScheduling
 public class NettyClientServiceConfig {
 
-    private final NettyClientManager<Sample> manager;
+    private final NettyClientManager<Sample> MANAGER;
 
-    public NettyClientServiceConfig() throws Exception {
-        this.manager = new NettyClientManager<>(5, "localhost", 9999);
-        this.manager.initialize();
+    public NettyClientServiceConfig() {
+        this.MANAGER = new NettyClientManager<>(5, "localhost", 9999);
+        this.MANAGER.initialize();
         System.out.println("Initialization Suceeded");
     }
 
+    /**
+     * 클라이언트 매니저를 스프링 빈으로 등록합니다.
+     * @return
+     */
     @Bean
     public NettyClientManager<Sample> nettyClientManager() {
-        return this.manager;
+        return this.MANAGER;
     }
 
+    /**
+     * 클라이언트를 주기적으로 일괄 초기화합니다.
+     */
     @Scheduled(cron = "0 * * * * *")
-    private void initialize() throws Exception {
+    private void initialize() {
         System.out.println("Will Run Initialize Scheduled Task");
-        this.manager.initialize();
+        this.MANAGER.initialize();
     }
 
+    /**
+     * 데이터 전송 예제 :: 샘플 데이터를 서버로 전송합니다.
+     */
     @PostConstruct
-    private void test() throws Exception {
-        System.out.println("Will Sent Date to Server");
-
+    private void test() {
         List<Sample> spls = new ArrayList<>();
-        // Test :: Send Datas
         for (int i = 0; i < 1000; i++) {
             spls.add(new Sample(i, "Sample Data " + i));
         }
 
-        NettyClient<Sample> cli = this.manager.getNextClient();
+        NettyClient<Sample> cli = this.MANAGER.getNextClient();
         cli.send(spls);
-
     }
 
 }
