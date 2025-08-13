@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Test\\NettyProtobufServer\\NettyProtobufServer.csproj": {}
+  },
+  "projects": {
+    "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Test\\NettyProtobufServer\\NettyProtobufServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Test\\NettyProtobufServer\\NettyProtobufServer.csproj",
+        "projectName": "NettyProtobufServer",
+        "projectPath": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Test\\NettyProtobufServer\\NettyProtobufServer.csproj",
+        "packagesPath": "C:\\Users\\dhkim\\.nuget\\packages\\",
+        "outputPath": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Test\\NettyProtobufServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dhkim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.30.2, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

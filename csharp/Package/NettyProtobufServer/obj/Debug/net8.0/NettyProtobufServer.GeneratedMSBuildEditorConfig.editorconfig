@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NettyProtobufServer
-build_property.ProjectDir = C:\hooniegit\Git\NettyDataProtocol\csharp\Package\NettyProtobufServer\
+build_property.ProjectDir = C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Package\NettyProtobufServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

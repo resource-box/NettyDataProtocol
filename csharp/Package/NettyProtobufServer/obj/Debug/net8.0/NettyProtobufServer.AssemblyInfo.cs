@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NettyProtobufServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29c20c016036c71d007751cf16436311579ae579")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50fb6f34cbd8579bc25c94278493104bb7184bf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NettyProtobufServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NettyProtobufServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

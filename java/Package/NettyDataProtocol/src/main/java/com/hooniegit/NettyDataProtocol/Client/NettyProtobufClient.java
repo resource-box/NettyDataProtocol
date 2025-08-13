@@ -23,16 +23,11 @@ import java.util.List;
  */
 public class NettyProtobufClient<T extends GeneratedMessageV3> {
 
-    // 생성자 속성
     public final int INDEX;
     private final String HOST;
     private final int PORT;
-    // 클래스 내부 속성
-    private Channel CHANNEL;
+    public Channel CHANNEL;
     private final NioEventLoopGroup GROUP = new NioEventLoopGroup();
-
-    // 상태 속성
-    public boolean IS_INITIALIZED = false;
 
     public NettyProtobufClient(int INDEX, String HOST, int PORT) {
         this.INDEX = INDEX;
@@ -45,6 +40,9 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
      * @throws NettyConnectionFailedException 연결 실패 오류
      */
     public void initialize() {
+        if (this.CHANNEL != null) {
+            this.CHANNEL.close();
+        }
         try {
             // 채널을 별도로 신규 정의해 비정상적인 할당을 방지합니다.
             Channel NEW = new Bootstrap()
@@ -61,9 +59,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
                         }
                     }).connect(HOST, PORT).sync().channel();
             this.CHANNEL = NEW;
-            this.IS_INITIALIZED = true;
         } catch (Exception e) {
-            this.IS_INITIALIZED = false;
             throw new NettyConnectionFailedException(e.toString(), INDEX);
         }
     }
@@ -74,19 +70,12 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
      * @throws NettyUnInitializedException 초기화 비활성 오류
      * @throws NettyDisconnectedException 연결 해제 오류
      */
-    public void send(T data) {
-        if (!this.IS_INITIALIZED) throw new NettyUnInitializedException("Netty Client is Not Initialized", INDEX);
-
-        try {
-            byte[] bytes = data.toByteArray();
-            ByteBuf buf = Unpooled.buffer(4 + bytes.length);
-            buf.writeInt(bytes.length);
-            buf.writeBytes(bytes);
-            this.CHANNEL.writeAndFlush(buf.retainedDuplicate());
-        } catch (Exception e) {
-            this.IS_INITIALIZED = false;
-            throw new NettyDisconnectedException(e.toString(), this.INDEX);
-        }
+    public void send(T data)  {
+        byte[] bytes = data.toByteArray();
+        ByteBuf buf = Unpooled.buffer(4 + bytes.length);
+        buf.writeInt(bytes.length);
+        buf.writeBytes(bytes);
+        this.CHANNEL.writeAndFlush(buf.retainedDuplicate());
     }
 
     /**

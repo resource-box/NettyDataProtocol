@@ -54,11 +54,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\NettyProtobufServer.csproj",
+      "projectUniqueName": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\NettyProtobufServer.csproj",
       "projectName": "NettyProtobufServer",
-      "projectPath": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\NettyProtobufServer.csproj",
+      "projectPath": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\NettyProtobufServer.csproj",
       "packagesPath": "C:\\Users\\dhkim\\.nuget\\packages\\",
-      "outputPath": "C:\\hooniegit\\Git\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\obj\\",
+      "outputPath": "C:\\hooniegit\\Git\\ResourceBox\\NettyDataProtocol\\csharp\\Package\\NettyProtobufServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

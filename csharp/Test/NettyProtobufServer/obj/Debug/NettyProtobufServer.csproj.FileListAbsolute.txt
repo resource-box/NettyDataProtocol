@@ -1,0 +1,15 @@
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\obj\Debug\NettyProtobufServer.csproj.AssemblyReference.cache
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\obj\Debug\NettyProtobufServer.csproj.CoreCompileInputs.cache
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\NettyProtobufServer.exe.config
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\NettyProtobufServer.exe
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\NettyProtobufServer.pdb
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\Google.Protobuf.dll
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\Google.Protobuf.pdb
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\System.Buffers.dll
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\System.Memory.dll
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\System.Numerics.Vectors.dll
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\obj\Debug\NettyPro.E9456975.Up2Date
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\obj\Debug\NettyProtobufServer.exe
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\obj\Debug\NettyProtobufServer.pdb
+C:\hooniegit\Git\ResourceBox\NettyDataProtocol\csharp\Test\NettyProtobufServer\bin\Debug\NettyProtobufServerFramework.dll

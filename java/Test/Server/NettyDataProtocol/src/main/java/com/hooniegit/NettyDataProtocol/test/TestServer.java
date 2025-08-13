@@ -1,6 +1,7 @@
 package com.hooniegit.NettyDataProtocol.test;
 
 import com.hooniegit.NettyDataProtocol.Server.ObjectServer;
+import com.hooniegit.SourceData.Interface.TagData;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Service;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class TestServer {
 
-    private ObjectServer<Sample> nettyServer;
+    private ObjectServer<TagData<String>> nettyServer;
 
     @PostConstruct
     public void start() throws Exception {

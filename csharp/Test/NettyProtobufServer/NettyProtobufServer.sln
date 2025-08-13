@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NettyProtobufServer", "NettyProtobufServer.csproj", "{0B9D8026-A906-4436-95D9-F102F42D22C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{999CCAAC-512A-4762-913D-5B2EE38D3419}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B9D8026-A906-4436-95D9-F102F42D22C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9D8026-A906-4436-95D9-F102F42D22C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9D8026-A906-4436-95D9-F102F42D22C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9D8026-A906-4436-95D9-F102F42D22C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2999805-C2F0-4913-B5ED-F13E9658D439}
+	EndGlobalSection
+EndGlobal
