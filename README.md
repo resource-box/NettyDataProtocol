@@ -1,5 +1,5 @@
 # NettyDataProtocol
-'NettyDataProtocol' 은 Netty 패키지를 전신으로 한 TCP 프로토콜 기반의 데이터 전송용 패키지입니다.<br>
+'NettyDataProtocol' 은 Netty 패키지를 전신으로 하는 TCP 프로토콜 기반의 데이터 전송용 패키지입니다.<br>
 모든 라이센스는 Apache License 2.0을 따릅니다.<br>
 
 ### About
