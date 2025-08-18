@@ -20,7 +20,6 @@ import io.netty.buffer.ByteBufOutputStream;
  */
 public class ByteBufSerializer {
 
-    // 클래스 내부 속성
     private static final ObjectPool<Kryo> kryoPool;
 
     /**

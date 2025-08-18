@@ -5,14 +5,11 @@ import com.hooniegit.NettyDataProtocol.Exception.NettyServerStopFailedException;
 import com.hooniegit.NettyDataProtocol.Tools.Decoder;
 import com.hooniegit.NettyDataProtocol.Tools.DefaultHandler;
 import com.hooniegit.NettyDataProtocol.Tools.Encoder;
-
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-import java.io.IOException;
 import java.util.function.Supplier;
 
 /**
@@ -21,13 +18,10 @@ import java.util.function.Supplier;
  */
 public class ObjectServer<T extends Object> {
 
-    // 생성자 속성
     private final int PORT;
     private final EventLoopGroup bossGroup;
     private final EventLoopGroup workerGroup;
     private Channel serverChannel;
-
-    // 상태 속성
     private final Supplier<DefaultHandler<T>> handlerSupplier;
 
     public ObjectServer(int PORT, int bossGroupThreads, int workerGroupThreads, Supplier<DefaultHandler<T>> handlerSupplier) {

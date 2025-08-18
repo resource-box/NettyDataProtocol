@@ -51,7 +51,7 @@ public class NettyClientServiceConfig {
         while (true) {
             try {
                 String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-                System.out.println(this.MANAGER.STATUS.getDescription() + " " + timestamp);
+//                System.out.println(this.MANAGER.STATUS.getDescription() + " " + timestamp);
                 List<TagData<String>> spls = new ArrayList<>();
                 for (int i = 0; i < 1000; i++) {
                     spls.add(new TagData<>(i, "Data " + i, timestamp));
