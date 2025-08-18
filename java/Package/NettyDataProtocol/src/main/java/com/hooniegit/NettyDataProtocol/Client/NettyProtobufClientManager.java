@@ -3,7 +3,6 @@ package com.hooniegit.NettyDataProtocol.Client;
 import com.google.protobuf.GeneratedMessageV3;
 import com.hooniegit.NettyDataProtocol.Enum.ConnectionStatus;
 import com.hooniegit.NettyDataProtocol.Exception.NettyConnectionFailedException;
-import com.hooniegit.NettyDataProtocol.Exception.NettyTransportFailedException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -18,12 +17,6 @@ public class NettyProtobufClientManager<T extends GeneratedMessageV3> {
     private final AtomicInteger INDEX = new AtomicInteger(0);
     private ConnectionStatus STATUS = ConnectionStatus.DISCONNECTED;
 
-    /**
-     * [생성자] 입력한 수만큼 클라이언트를 생성합니다.
-     * @param clientCount 클라이언트 수
-     * @param HOST 대상 주소
-     * @param PORT 대상 포트
-     */
     public NettyProtobufClientManager(int clientCount, String HOST, int PORT) {
         for (int i = 0; i < clientCount; i++) {
             CLIENTS.add(new NettyProtobufClient<T>(i, HOST, PORT));

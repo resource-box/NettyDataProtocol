@@ -85,6 +85,29 @@
 					</archive>
 				</configuration>
 			</plugin>
+
+			<!-- Javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal> <!-- javadoc.jar 생성 -->
+						</goals>
+						<configuration>
+							<!-- JDK 8+에서 문서 경고로 빌드가 깨지는 것 방지 -->
+							<failOnError>false</failOnError>
+							<doclint>none</doclint>
+							<!-- 필요 시 인코딩 지정 -->
+							<encoding>UTF-8</encoding>
+							<charset>UTF-8</charset>
+							<docencoding>UTF-8</docencoding>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

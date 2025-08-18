@@ -60,7 +60,7 @@ public class NettyClientServiceConfig {
                 this.MANAGER.send(spls);
                 Thread.sleep(10);
             } catch (Exception e) {
-                e.printStackTrace();
+//                e.printStackTrace();
             }
         }
     }

@@ -65,7 +65,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
     }
 
     /**
-     * 리스트 객체를 서버로 전송합니다.
+     * ByteBuf 객체를 서버로 전송합니다.
      * @param data 전송 데이터
      * @throws NettyUnInitializedException 초기화 비활성 오류
      * @throws NettyDisconnectedException 연결 해제 오류

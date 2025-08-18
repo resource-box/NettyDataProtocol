@@ -63,7 +63,6 @@ public class NettyClientManager<T> {
 
         client.send(message);
         return true;
-
     }
 
 

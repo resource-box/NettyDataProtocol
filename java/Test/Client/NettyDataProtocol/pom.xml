@@ -32,6 +32,7 @@
 			<name>Nexus Repository</name>
 			<url>http://workspace:18081/repository/maven-releases/</url>
 		</repository>
+
 	</repositories>
 
 	<properties>
