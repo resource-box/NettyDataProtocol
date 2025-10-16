@@ -35,6 +35,8 @@ public class ByteBufSerializer {
                 Kryo kryo = new Kryo();
                 // ** 클래스 로더를 구성하여 ClassNotFoundException을 방지합니다. **
                 kryo.setClassLoader(Thread.currentThread().getContextClassLoader());
+                // ** 참조 추적을 비활성화하여 성능을 향상시킵니다. (필요에 따라 조정 가능) **
+                kryo.setReferences(false);
                 return kryo;
             }
 
@@ -58,9 +60,13 @@ public class ByteBufSerializer {
             kryo = kryoPool.borrowObject();
             Output output = new Output(new ByteBufOutputStream(out));
             kryo.writeClassAndObject(output, object);
-            output.close();
+//            output.close();
+            output.flush();
         } finally {
-            if (kryo != null) kryoPool.returnObject(kryo);
+            if (kryo != null) {
+                kryo.reset();
+                kryoPool.returnObject(kryo);
+            }
         }
     }
 
@@ -74,14 +80,18 @@ public class ByteBufSerializer {
     @SuppressWarnings("unchecked")
     public static <T> T deserialize(ByteBuf in) throws Exception {
         Kryo kryo = null;
+        Input input = null;
         try {
             kryo = kryoPool.borrowObject();
-            Input input = new Input(new ByteBufInputStream(in));
+            input = new Input(new ByteBufInputStream(in));
             return (T) kryo.readClassAndObject(input);
         } finally {
-            if (kryo != null) kryoPool.returnObject(kryo);
+            if (input != null) input.close();
+            if (kryo != null) {
+                kryo.reset();
+                kryoPool.returnObject(kryo);
+            }
         }
     }
-
 }
 

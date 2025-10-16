@@ -5,11 +5,14 @@ import com.hooniegit.NettyDataProtocol.Exception.NettyServerStopFailedException;
 import com.hooniegit.NettyDataProtocol.Tools.Decoder;
 import com.hooniegit.NettyDataProtocol.Tools.DefaultHandler;
 import com.hooniegit.NettyDataProtocol.Tools.Encoder;
+import com.hooniegit.NettyDataProtocol.Tools.KryoObjectDecoder;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
+
 import java.util.function.Supplier;
 
 /**
@@ -44,8 +47,20 @@ public class ObjectServer<T extends Object> {
                         @Override
                         protected void initChannel(SocketChannel ch) {
                             ch.pipeline().addLast(
-                                    new Decoder(),
-                                    new Encoder<T>(),
+                                    // NEW
+                                    new LengthFieldBasedFrameDecoder(
+                                            4*1024*1024,
+                                            0,
+                                            4,
+                                            0,
+                                            4,
+                                            true
+                                    ),
+                                    new KryoObjectDecoder(),
+
+                                    // OLD
+//                                    new Decoder(),
+//                                    new Encoder<T>(),
                                     handlerSupplier.get()
                             );
                         }

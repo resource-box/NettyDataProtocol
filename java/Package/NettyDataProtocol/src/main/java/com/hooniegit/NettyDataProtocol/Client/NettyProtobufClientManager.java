@@ -31,7 +31,7 @@ public class NettyProtobufClientManager<T extends GeneratedMessageV3> {
             try {
                 client.initialize();
             } catch (NettyConnectionFailedException e) {
-                throw new NettyConnectionFailedException(e.toString(), null);
+                throw new NettyConnectionFailedException(e.toString());
             }
         }
     }
@@ -49,7 +49,7 @@ public class NettyProtobufClientManager<T extends GeneratedMessageV3> {
             try {
                 update();
             } catch (NettyConnectionFailedException e) {
-                throw new NettyConnectionFailedException(e.toString(), (Integer) null);
+                throw new NettyConnectionFailedException(e.toString());
             }
             return false;
         }
@@ -81,7 +81,7 @@ public class NettyProtobufClientManager<T extends GeneratedMessageV3> {
             this.STATUS = ConnectionStatus.CONNECTED; // STATUS 전환 :: Initialization Succeed
         } catch (NettyConnectionFailedException ex) {
             this.STATUS = ConnectionStatus.DISCONNECTED; // STATUS 전환 :: Initialization Failed
-            throw new NettyConnectionFailedException(ex.toString(), (Integer)null);
+            throw new NettyConnectionFailedException(ex.toString());
         }
 
     }

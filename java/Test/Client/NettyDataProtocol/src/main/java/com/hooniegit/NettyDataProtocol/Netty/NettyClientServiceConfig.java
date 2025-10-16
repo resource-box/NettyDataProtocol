@@ -1,4 +1,4 @@
-package com.hooniegit.NettyDataProtocol.Config;
+package com.hooniegit.NettyDataProtocol.Netty;
 
 import com.hooniegit.NettyDataProtocol.Client.NettyClientManager;
 import com.hooniegit.SourceData.Interface.TagData;
@@ -12,15 +12,17 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Configuration
 @EnableScheduling
 public class NettyClientServiceConfig {
 
-    private final NettyClientManager<TagData<String>> MANAGER;
+    private final NettyClientManager<List<TagData<Double>>> MANAGER;
+    private final Random RANDOM = new Random();
 
     public NettyClientServiceConfig() {
-        this.MANAGER = new NettyClientManager<>(5, "localhost", 9999);
+        this.MANAGER = new NettyClientManager<>(20, "localhost", 9999);
         try {
             this.MANAGER.initialize();
         } catch (Exception e) {
@@ -33,7 +35,7 @@ public class NettyClientServiceConfig {
      * @return
      */
     @Bean
-    public NettyClientManager<TagData<String>> nettyClientManager() {
+    public NettyClientManager<List<TagData<Double>>> nettyClientManager() {
         return this.MANAGER;
     }
 
@@ -51,16 +53,15 @@ public class NettyClientServiceConfig {
         while (true) {
             try {
                 String timestamp = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
-//                System.out.println(this.MANAGER.STATUS.getDescription() + " " + timestamp);
-                List<TagData<String>> spls = new ArrayList<>();
-                for (int i = 0; i < 1000; i++) {
-                    spls.add(new TagData<>(i, "Data " + i, timestamp));
+                List<TagData<Double>> spls = new ArrayList<>();
+                for (int i = 0; i < 20000; i++) {
+                    spls.add(new TagData<>(i, this.RANDOM.nextDouble(), timestamp));
                 }
 
                 this.MANAGER.send(spls);
-                Thread.sleep(10);
+                Thread.sleep(50);
             } catch (Exception e) {
-//                e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }

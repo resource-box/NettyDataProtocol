@@ -5,11 +5,7 @@ package com.hooniegit.NettyDataProtocol.Exception;
  */
 public class NettyConnectionFailedException extends IllegalStateException {
 
-    public final Integer INDEX;
-
-    public NettyConnectionFailedException(String message, Integer INDEX) {
-        super(message);
-        this.INDEX = INDEX;
-    }
+    public NettyConnectionFailedException(String message) {
+        super(message);}
 
 }

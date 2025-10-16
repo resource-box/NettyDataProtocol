@@ -20,7 +20,7 @@ public class Decoder extends ByteToMessageDecoder {
     @Override
     protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
         // 수신 데이터는 최소 8바이트 (정수형 길이 + 데이터) 이상이어야 합니다.
-        if (in.readableBytes() < 8) return;
+        if (in.readableBytes() < 4) return;
 
         // 페이로드 길이를 확인하고, 길이가 부족한 경우 데이터를 버퍼링합니다.
         in.markReaderIndex();

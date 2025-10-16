@@ -5,6 +5,7 @@ import com.hooniegit.NettyDataProtocol.Exception.NettyConnectionFailedException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * 클라이언트 관리자 클래스입니다. 복수의 클라이언트 그룹을 관리 및 반환합니다.
@@ -14,11 +15,12 @@ public class NettyClientManager<T> {
 
     private final List<NettyClient<T>> CLIENTS = new ArrayList<>();
     private final AtomicInteger INDEX = new AtomicInteger(0);
-    public ConnectionStatus STATUS = ConnectionStatus.DISCONNECTED;
+    private final AtomicReference<ConnectionStatus> STATUS
+            = new AtomicReference<>(ConnectionStatus.DISCONNECTED);
 
     public NettyClientManager(int clientCount, String HOST, int PORT) {
         for (int i = 0; i < clientCount; i++) {
-            CLIENTS.add(new NettyClient<T>(i, HOST, PORT));
+            CLIENTS.add(new NettyClient<T>(HOST, PORT));
         }
     }
 
@@ -30,7 +32,7 @@ public class NettyClientManager<T> {
             try {
                 client.initialize();
             } catch (NettyConnectionFailedException e) {
-                throw new NettyConnectionFailedException(e.toString(), null);
+                throw new NettyConnectionFailedException(e.toString());
             }
         }
     }
@@ -40,23 +42,23 @@ public class NettyClientManager<T> {
      * @param message
      * @return 전송 성공 여부
      */
-    public boolean send(List<T> message) throws Exception {
-        if (this.STATUS.getCode() == -1) return false; // STATUS Check
+    public boolean send(T message) throws Exception {
+        if (this.STATUS.get() == ConnectionStatus.MANAGING) return false; // STATUS Check
 
         // DISCONNECTED 상태일 경우 NettyClient 초기화 시도
-        if (this.STATUS.getCode() == 0) {
+        if (this.STATUS.get() == ConnectionStatus.DISCONNECTED) {
             try {
                 update();
             } catch (NettyConnectionFailedException e) {
-                throw new NettyConnectionFailedException(e.toString(), (Integer) null);
+                throw new NettyConnectionFailedException(e.toString());
             }
             return false;
         }
 
         // CONNECTED 상태일 경우 데이터 전송 시도, 실패 시 NettyClient 초기화 시도
         NettyClient<T> client = getNextClient();
-        if (!client.CHANNEL.isActive()) {
-            this.STATUS = ConnectionStatus.DISCONNECTED;
+        if (!client.getCHANNEL().isActive()) {
+            this.STATUS.set(ConnectionStatus.DISCONNECTED);
             update();
             return false;
         }
@@ -70,18 +72,18 @@ public class NettyClientManager<T> {
      * 클라이언트 업데이트를 수행합니다.
      */
     public void update() {
-        if (this.STATUS.getCode() == -1) return; // STATUS Check
+        if (this.STATUS.get() == ConnectionStatus.MANAGING) return; // STATUS Check
 
         // NettyClient 일괄 초기화
-        this.STATUS = ConnectionStatus.MANAGING; // STATUS 전환 :: Initializing
+        this.STATUS.set(ConnectionStatus.MANAGING); // STATUS 전환 :: Initializing
         try {
             for (NettyClient<T> client : this.CLIENTS) {
                 client.initialize();
             }
-            this.STATUS = ConnectionStatus.CONNECTED; // STATUS 전환 :: Initialization Succeed
+            this.STATUS.set(ConnectionStatus.CONNECTED); // STATUS 전환 :: Initialization Succeed
         } catch (NettyConnectionFailedException ex) {
-            this.STATUS = ConnectionStatus.DISCONNECTED; // STATUS 전환 :: Initialization Failed
-            throw new NettyConnectionFailedException(ex.toString(), (Integer)null);
+            this.STATUS.set(ConnectionStatus.DISCONNECTED); // STATUS 전환 :: Initialization Failed
+            throw new NettyConnectionFailedException(ex.toString());
         }
 
     }

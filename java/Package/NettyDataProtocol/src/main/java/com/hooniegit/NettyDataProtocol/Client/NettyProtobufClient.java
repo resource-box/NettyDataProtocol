@@ -60,7 +60,7 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
                     }).connect(HOST, PORT).sync().channel();
             this.CHANNEL = NEW;
         } catch (Exception e) {
-            throw new NettyConnectionFailedException(e.toString(), INDEX);
+            throw new NettyConnectionFailedException(e.toString());
         }
     }
 
@@ -75,7 +75,11 @@ public class NettyProtobufClient<T extends GeneratedMessageV3> {
         ByteBuf buf = Unpooled.buffer(4 + bytes.length);
         buf.writeInt(bytes.length);
         buf.writeBytes(bytes);
-        this.CHANNEL.writeAndFlush(buf.retainedDuplicate());
+        try {
+            this.CHANNEL.writeAndFlush(buf);
+        } finally {
+            bytes = null;
+        }
     }
 
     /**

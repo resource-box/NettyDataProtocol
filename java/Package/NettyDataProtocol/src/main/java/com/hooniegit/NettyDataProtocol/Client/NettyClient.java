@@ -5,6 +5,7 @@ import com.hooniegit.NettyDataProtocol.Exception.NettyDisconnectedException;
 import com.hooniegit.NettyDataProtocol.Exception.NettyUnInitializedException;
 import com.hooniegit.NettyDataProtocol.Tools.Decoder;
 import com.hooniegit.NettyDataProtocol.Tools.Encoder;
+import com.hooniegit.NettyDataProtocol.Tools.KryoObjectListEncoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -12,6 +13,9 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.LengthFieldPrepender;
+import lombok.Getter;
+
 import java.util.List;
 
 /**
@@ -20,14 +24,13 @@ import java.util.List;
  */
 public class NettyClient<T> {
 
-    public final int INDEX;
     private final String HOST;
     private final int PORT;
-    public Channel CHANNEL;
+    @Getter
+    private volatile Channel CHANNEL;
     private final NioEventLoopGroup GROUP = new NioEventLoopGroup();
 
-    public NettyClient(int INDEX, String HOST, int PORT) {
-        this.INDEX = INDEX;
+    public NettyClient(String HOST, int PORT) {
         this.HOST = HOST;
         this.PORT = PORT;
     }
@@ -48,15 +51,19 @@ public class NettyClient<T> {
                         @Override
                         protected void initChannel(SocketChannel ch) {
                             ch.pipeline().addLast(
-                                    new Encoder<List<T>>(),
-                                    new Decoder(),
+                                    // NEW
+                                    new LengthFieldPrepender(4),
+                                    new KryoObjectListEncoder<T>(),
+                                    // OLD
+//                                    new Encoder<T>(),
+//                                    new Decoder(),
                                     new ChannelInboundHandlerAdapter()
                             );
                         }
                     }).connect(HOST, PORT).sync().channel();
             this.CHANNEL = NEW;
         } catch (Exception e) {
-            throw new NettyConnectionFailedException(e.toString(), INDEX);
+            throw new NettyConnectionFailedException(e.toString());
         }
     }
 
@@ -66,7 +73,7 @@ public class NettyClient<T> {
      * @throws NettyUnInitializedException 초기화 비활성 오류
      * @throws NettyDisconnectedException 연결 해제 오류
      */
-    public void send(List<T> data) {
+    public void send(T data) {
         this.CHANNEL.writeAndFlush(data);
     }
 
