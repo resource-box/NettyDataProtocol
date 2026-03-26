@@ -1,23 +1,23 @@
 package com.hooniegit.NettyDataProtocol.test;
 
-import com.hooniegit.NettyDataProtocol.Tools.DefaultHandler;
+import com.hooniegit.NettyDataProtocol.Test.Batch;
+import com.hooniegit.NettyDataProtocol.Test.BatchInboundHandler;
 import com.hooniegit.SourceData.Interface.TagData;
-import com.hooniegit.Xtream.Tools.StreamManager;
-import io.netty.channel.ChannelHandlerContext;
 
-import java.util.List;
-
-public class TestHandler extends DefaultHandler<List<TagData<Double>>> {
-
-    private StreamManager<List<TagData<Double>>> MANAGER;
-
-    public TestHandler(StreamManager<List<TagData<Double>>> MANAGER) {
-        this.MANAGER = MANAGER;
-    }
+public class TestHandler extends BatchInboundHandler {
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, List<TagData<Double>> msg) {
-//        this.MANAGER.getNextStream().publishInitialEvent(msg);
+    protected void task(Object msg) {
+        System.out.println(msg);
+        try {
+            Batch<TagData<Double>> batch = (Batch<TagData<Double>>) msg;
+            String message = "[Handler] Received batch with timestamp: " + batch.batchTs + " and size: " + batch.size();
+            System.out.println(message);
+            System.out.println(batch.items.get(0).getTimestamp());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

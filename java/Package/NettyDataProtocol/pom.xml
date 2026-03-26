@@ -7,7 +7,7 @@
 
 	<groupId>com.hooniegit</groupId>
 	<artifactId>NettyDataProtocol</artifactId>
-	<version>3.3.1</version>
+	<version>3.4.4</version>
 	<name>NettyDataProtocol</name>
 	<description>Lightweight Java Data Transmitter Library Based On Netty</description>
 
@@ -36,6 +36,7 @@
 		<dependency>
 			<groupId>com.esotericsoftware</groupId>
 			<artifactId>kryo</artifactId>
+<!--			<version>5.6.0</version>-->
 			<version>4.0.0</version>
 		</dependency>
 
@@ -51,6 +52,24 @@
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-java</artifactId>
 			<version>4.29.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.msgpack</groupId>
+			<artifactId>jackson-dataformat-msgpack</artifactId>
+			<version>0.9.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.5.6</version>
 		</dependency>
 	</dependencies>
 

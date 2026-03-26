@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>com.hooniegit</groupId>
 			<artifactId>NettyDataProtocol</artifactId>
-			<version>3.3.1</version>
+			<version>3.4.4</version>
 		</dependency>
 
 		<dependency>
@@ -62,11 +62,6 @@
 			<version>0.1.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.hooniegit</groupId>
-			<artifactId>Xerializer</artifactId>
-			<version>0.1.0</version>
-		</dependency>
 	</dependencies>
 
 	<build>

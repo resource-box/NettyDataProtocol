@@ -1,45 +1,28 @@
 package com.hooniegit.NettyDataProtocol.test;
 
-import com.hooniegit.NettyDataProtocol.Server.ObjectServer;
-import com.hooniegit.SourceData.Interface.TagData;
-import com.hooniegit.Xtream.Tools.StreamManager;
+import com.hooniegit.NettyDataProtocol.Test.BatchInboundHandler;
+import com.hooniegit.NettyDataProtocol.Test.TcpKryoServer;
 import io.netty.buffer.PooledByteBufAllocator;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import java.util.function.Supplier;
 
 @Service
 public class TestServer {
 
-    private ObjectServer<List<TagData<Double>>> nettyServer;
-
-    private final StreamManager<List<TagData<Double>>> MANAGER;
-
-    public TestServer(StreamManager<List<TagData<Double>>> MANAGER) {
-        this.MANAGER = MANAGER;
-    }
+    private TcpKryoServer server;
 
     @PostConstruct
     public void start() throws Exception {
-        int port = 9999;
-        int bossThreads = 1;
-        int workerThreads = Runtime.getRuntime().availableProcessors();
+        int port = 18000;
+        int maxFrameBytes = 192000000;
+        int workerThreads = 30;
+        Supplier<BatchInboundHandler> handlerSupplier = TestHandler::new;
 
-        nettyServer = new ObjectServer<>(
-                port,
-                bossThreads,
-                workerThreads,
-//                TestHandler::new
-                () -> new TestHandler(MANAGER)
-        );
-
-
-        nettyServer.start();
-        System.out.println("Netty TCP Server Started on Port " + port);
+        this.server = new TcpKryoServer(port, maxFrameBytes, workerThreads, handlerSupplier);
+        this.server.start();
     }
 
     @Scheduled(fixedRate = 5000)
@@ -50,9 +33,8 @@ public class TestServer {
 
     @PreDestroy
     public void stop() throws Exception {
-        if (nettyServer != null) {
-            nettyServer.stop();
-            System.out.println("Netty TCP Server Stopped.");
+        if (this.server != null) {
+            this.server.close();
         }
     }
 
